@@ -1,5 +1,5 @@
 {
-  "name": "gota-quickstart",
+  "name": "quickstart",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/compression": "0.0.34",
-    "gota-boot": "latest"
+    "@gota/boot": "latest"
   },
   "devDependencies": {
     "typescript": "^2.5.2"
