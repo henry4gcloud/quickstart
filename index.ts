@@ -1,18 +1,18 @@
+import { Store } from "./service/Store";
 import {GotaApp, GotaBoot} from "@gota/boot";
-import {Connection} from "@gota/dao";
-import {UserService} from "./service/UserService";
 
 @GotaApp({
-    name: 'Hello',
-    scanner:  [UserService, Connection],
+    name: 'StoreApp',
+    scanner: [ Store ],
     config: {
         hostName : 'localhost',
-        port: 3000,
+        port: 3001,
         devMode:true,
         database: {
             host: 'localhost',
             port: 27017,
-            databaseName:'gota'
+            databaseName:'my_data'
+
         }
     }
 })
