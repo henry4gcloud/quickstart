@@ -1,9 +1,11 @@
 import { Store } from "./service/Store";
 import {GotaApp, GotaBoot} from "@gota/boot";
+import { UserService } from "./service/UserService";
+import { Connection } from "@gota/dao";
 
 @GotaApp({
     name: 'StoreApp',
-    scanner: [ Store ],
+    scanner: [ Store, UserService, Connection ],
     config: {
         hostName : 'localhost',
         port: 3001,
