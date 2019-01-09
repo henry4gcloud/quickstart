@@ -12,11 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gota/boot": "latest"
+    "@gota/boot": "0.0.18"
   },
   "devDependencies": {
-    "typescript": "^2.9.2",
-    "@types/node": "^9.4.6",
-    "@types/compression": "0.0.34"
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
   }
 }

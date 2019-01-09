@@ -22,7 +22,7 @@ let data = [
 ];
 
 @Service({path:'/store-service'})
-export class Store{
+export class StoreService{
     @Config()
     private database: object;
     constructor(){

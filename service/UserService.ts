@@ -2,7 +2,7 @@
 import {QueryParameter, RequestMethod, Service, ServiceMapping} from '@gota/service';
 import {User} from "../models/User";
 
-@Service({path:'/user-service', models: [User]})
+@Service({path:'/user-service'})
 export class UserService{
     constructor(){
     }

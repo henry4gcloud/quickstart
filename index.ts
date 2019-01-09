@@ -1,23 +1,23 @@
-import { Store } from "./service/Store";
+import { StoreService } from "./service/StoreService";
 import {GotaApp, GotaBoot} from "@gota/boot";
-import { UserService } from "./service/UserService";
-import { Connection } from "@gota/dao";
 
 @GotaApp({
     name: 'StoreApp',
-    scanner: [ Store, UserService, Connection ],
+    scanner: [ StoreService ],
     config: {
         hostName : 'localhost',
         port: 3001,
         devMode:true,
         database: {
-            host: 'localhost',
-            port: 27017,
-            databaseName:'my_data'
-
-        }
+            protocol:'mongodb+srv',
+            host: 'cluster0-g6wi8.gcp.mongodb.net/test?retryWrites=true',
+            user: 'admin',
+            password: 'iC2gjdMkgrjDwF03',
+            // options:{},
+            databaseName:'gota'
+        },
     }
 })
-class App{};
+class StoreApp{};
 
-GotaBoot(App);
+GotaBoot(StoreApp);
