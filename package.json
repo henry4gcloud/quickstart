@@ -12,10 +12,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gota/boot": "0.0.20"
+    "@gota/boot": "latest",
+    "@gota/dao": "latest",
+    "@gota/injection": "latest",
+    "@gota/server": "latest",
+    "@gota/service": "latest"
   },
   "devDependencies": {
-    "@types/node": "^13.7.0",
-    "typescript": "^3.7.5"
+    "@types/node": "^13.7.7",
+    "typescript": "^3.8.3"
   }
 }

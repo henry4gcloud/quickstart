@@ -1,5 +1,5 @@
-import {Model,Entity} from "@gota/dao";
-import {Geographic} from "./Geographic";
+import {Model,Entity} from '@gota/dao';
+import {Geographic} from './Geographic';
 
 @Entity()
 export class Address {

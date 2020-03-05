@@ -1,13 +1,22 @@
-import {Model,Entity} from "@gota/dao";
-import {Address} from "./Address";
+import {Model,Entity} from '@gota/dao';
+import {Address} from './Address';
 
 @Entity()
 export class User extends Model {
     name:String;
+    gender: User.Gender;
     email:String;
     phone:String;
-    address: Address;
+    address: String | Address;
     constructor(name:string,  email:string, phone:string){
-        super({name:name, email:email, phone:phone});
+        super({name, email, phone});
+    }
+}
+
+export namespace User {
+    export type Gender = 'Female' | 'Male';
+    export const GENDERS = {
+        MALE: 'Male' as Gender,
+        FEMALE: 'Female' as Gender
     }
 }

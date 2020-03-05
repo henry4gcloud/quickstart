@@ -1,4 +1,4 @@
-import {Model,Entity} from "@gota/dao";
+import {Model,Entity} from '@gota/dao';
 
 @Entity()
 export class Geographic{
